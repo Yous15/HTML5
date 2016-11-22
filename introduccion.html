@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Mi super pagina de html5">
+	<menta name="keywords" content="ausias march, insti, dam, informatica">
+	<title> La mega pagina </title>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="micss.css">
+</head>
+
+<body>
+
+<div class="w3-row">
+<!-- Secciones de documento -->
+
+
+
+<!-- sidenav-->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left " style="display:none" id="mySidenav">
+
+	<a href="javascript:void(0)"
+		onclick="w3_close()"
+		class="w3-closenav w3-large w3-animate-left">Close &times;</a>
+		<a href="introduccion.html">Introducción</a>
+		<a href="#">Fotos</a>
+		<a href="#">Link 3</a>
+		<a href="Contacto.html">Contacto</a>
+		<a href="entrada.html">Vuelve al inicio</a>
+
+</nav>
+
+	<div id="divmain">
+		<!-- Cabecera -->
+			<header class="w3-container w3-teal w3-color">
+				  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+				<h1> Introducción </h1>
+			</header>
+		<!--Fin cabecera-->
+
+		<!-- Barra de navegación -->
+			<div class="w3-topbar">
+
+				<ul class="w3-ul">
+					<li class="w3-navitem w3-quarter"> <h5>Introducción</h5></li>
+					<li class="w3-navitem w3-quarter"><h5>Fotos</h5></li>
+					<li class="w3-navitem w3-quarter"><h5>Mejores playas</h5></li>
+					<li class="w3-navitem w3-quarter"><h5>Contacto</h5></li>
+				</ul>
+			</div>
+	</div>
+
+	<script>
+		function w3_open() {
+  		document.getElementById("divmain").style.marginLeft = "25%";
+  		document.getElementById("mySidenav").style.width = "25%";
+  		document.getElementById("mySidenav").style.display = "block";
+  		document.getElementById("openNav").style.display = 'none';
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function w3_close() {
+			document.getElementById("divmain").style.marginLeft = "0%";
+  		document.getElementById("mySidenav").style.display = "none";
+  		document.getElementById("openNav").style.display = "inline-block";
+			document.body.style.backgroundColor = "white";
+		}
+</script>
+
+<!-- Sección principal -->
+	<section id="main_section">
+
+		<article>
+
+			<header>
+				<h2 class="w3-centered">Título del Artículo</h2>
+			</header>
+<p contenteditable="false">
+	<span contenteditable="true" id="texto1">Què és Lorem Ipsum?</span><br>
+Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard<wbr> de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va<wbr> mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet<wbr> el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.
+ </p>
+ 				<figure>
+					<img src="elefante.jpg">
+					<figcaption id="texto1">
+						Dibujito
+					</figcaption>
+				</figure>
+
+				<a href="1-elefantes.pdf" ping="scripts/contar.php" target="_blank">Peaso download de elefantes, click for download</a>
+
+			<footer>
+			<time datetime="2016-10-03" pubdate>Publicado el 3 de octubre</time>
+			<p class="texto2" name="pepito"> Comentarios (0) </p>
+
+			</footer>
+
+		</article>
+
+		<article>
+
+			<header>
+				<h2><mark>Título del Artículo</mark></h2>
+				<time datetime="2016-09-27" pubdate>Publicado el 10 de enero de 2017</time>
+			</header>
+
+				Artículo 2
+
+				<figure>
+					<img src="elefante.jpg">
+					<figcaption>
+						Dibujito
+					</figcaption>
+				</figure>
+
+			<footer>
+			<time datetime="2016-10-03" pubdate>Publicado el 3 de octubre</time>
+			<p class="texto2"> Comentarios (0) </p>
+			</footer>
+
+		</article>
+
+	</section>
+
+<!-- Barra lateral -->
+	<aside id="main_aside">
+		<blockquote>Cita del artículo 1</blockquote>
+		<blockquote>Cita del artículo 2</blockquote>
+	</aside>
+
+<!-- Pie de página -->
+
+	<details>
+		<summary>
+			Click para ver reservas
+		</summary>
+			<p>Hay 5 reservas</p>
+	</details>
+
+	<footer id="main_footer">
+		<small>Copyleft Ausias March 2016 </small>
+	</footer>
+
+</div>
+</body>
+
+</html>
