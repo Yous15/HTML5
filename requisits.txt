@@ -1,0 +1,21 @@
+Hem acordat fer servir les següents classes css als projectes web:
+
+- SideNav done 
+- SlideShow done 
+- Images done
+- Tabs done
+- Input done.
+- Icons
+- Alguna/s del Responsive done.
+
+Características comunes:
+- Mínimo 3 secciones: Presentación - Contenido - Contacto/Reserva doe
+- Obligatorio usar Calendario de JQueryUI done
+
+Evaluación:
+- Uso del las clases especificadas y Calendar de JQueryUI --> 5
+- Clases extras (al menos 2) --> 6 done 
+- Modificación el css original del w3.css --> 7 done 
+- Uso de elementos html5 y css propios --> 8
+- Tu formulario interactua con un php de un hosting gratuito real --> 9
+- Buen gusto --> 10

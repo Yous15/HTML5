@@ -7,121 +7,116 @@
 	<meta name="description" content="Mi super pagina de html5">
 	<menta name="keywords" content="ausias march, insti, dam, informatica">
 	<title> Contacta </title>
-	<link rel="stylesheet" href="w3.css">
-	<link rel="stylesheet" href="micss.css">
-</head>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="shortcut icon" href="fotitos/icono.png">
+	<link rel="stylesheet" href="css/micss.css">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
 
-<body>
 
+		<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+				} );
+		</script>
+	</head>
+<body class="w3-pale-green">
 <div class="w3-row">
 <!-- Secciones de documento -->
-
-
-
 <!-- sidenav-->
-<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
-
+<nav class="w3-sidenav w3-cyan w3-text-white w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
 	<a href="javascript:void(0)"
-		onclick="w3_close()"
-		class="w3-closenav w3-large w3-animate-left">Close &times;</a>
+		onclick="w3_closeF()"
+		class="w3-closenav w3-large  w3-animate-left">Close &times;</a>
 		<a href="introduccion.html">Introducción</a>
-		<a href="#">Fotos</a>
-		<a href="#">Link 3</a>
+		<a href="quehago.html">Tradiciones y costumbres</a>
+		<a href="paisajes.html">Paisajes en Hawaii</a>
 		<a href="Contacto.html">Contacto</a>
-		<a href="entrada.html">Vuelve al inicio</a>
-
+		<a href="entrada.html">Vuelve al inicio</a> </li>
 </nav>
 
 	<div id="divmain">
 		<!-- Cabecera -->
-			<header class="w3-container w3-teal w3-color">
-				  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-				<h1> Contacto </h1>
+			<header class="bghead w3-container">
+				  <span class="w3-opennav w3-text-white w3-xlarge" onclick="w3_openF()" id="openNav">&#9776;</span>
+				<h1 class="mysupertitle"> Contacto </h1>
 			</header>
 		<!--Fin cabecera-->
-
 		<!-- Barra de navegación -->
-			<div class="w3-topbar">
-
-				<ul class="w3-ul">
-					<li class="w3-navitem w3-quarter"> <h5>Introducción</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Fotos</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Mejores playas</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Contacto</h5></li>
+				<ul class=" w3-ul">
+					<a href="introduccion.html"><li class="w3-navitem w3-pale-blue w3-quarter w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Introducción</h5></li></a>
+					<a href="tradiciones.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Tradiciones y costumbres</h5></li></a>
+					<a href="paisajes.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Paisajes en Hawaii </h5></li></a>
+					<a href="Contacto.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Contacto</h5></li></a>
 				</ul>
-			</div>
+
 	</div>
-
-	<script>
-		function w3_open() {
-  		document.getElementById("divmain").style.marginLeft = "15%";
-  		document.getElementById("mySidenav").style.width = "15%";
-			document.getElementById("formulario").style.marginLeft = "15%";
-  		document.getElementById("mySidenav").style.display = "block";
-  		document.getElementById("openNav").style.display = 'none';
-			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-		}
-
-		function w3_close() {
-			document.getElementById("divmain").style.marginLeft = "0%";
-			document.getElementById("formulario").style.marginLeft = "0%";
-  		document.getElementById("mySidenav").style.display = "none";
-  		document.getElementById("openNav").style.display = "inline-block";
-			document.body.style.backgroundColor = "white";
-		}
-</script>
 
 <!-- Formulario -->
 
 	<div id="formulario">
-
-
   <form name="elformulario" method="post" action="fichero.php" class="w3-input w3-container w3-half w3-res">
 
-    <div class="w3-container w3-green">
+    <div class="w3-container w3-green w3-round">
       <h2>Formulari de contacte</h2>
     </div>
-<br>
+
+<p class="w3-slim">
+	Rellena este formulario para conseguir más información de la que puedas encontrar en la página:
+</p>
     <div class="w3-quarter w3-left">
-    <label class="w3-myfont">Nom</label>
-    <input type="text" name="nom" id="cognom" class="w3-input" autocomplete="on" autofocus></h6>
+    <label class="w3-myfont">Nombre</label>
+    <input type="text" name="nom" id="cognom" class="w3-input" autocomplete="on" required autofocus></h6>
     </div>
 
     <div class="w3-third w3-right">
-    <label>2n Cognom</label>
+    <label>2o apellido</label>
     <input type="text" name="cognom2" id="cognom2" class="w3-input"></h6>
     </div>
 
     <div class="w3-third w3-right">
-    <label>1r Cognom</label>
-    <input type="text" name="cognom1" id="cognom1" class="w3-input"></h6>
+    <label>1r apellido</label>
+    <input type="text" name="cognom1" required id="cognom1" class="w3-input"></h6>
     </div>
 
-
-
     <div class="w3-quarter">
-    <label>Telèfon</label>
+    <label>Teléfono</label>
     <input type="tel" name="mitelefono" class="w3-input" required size="30" list="midatalist">
     </div>
 
     <div class="w3-twothird w3-right">
-    <label>Correu electrònic</label>
+    <label>Correo electrónico</label>
     <input type="email" name="miemail" placeholder="Introduce tu mail" required size="30" class="w3-input w3-left" multiple="on"><br>
     </div>
 
+		<div class="w3-left">
+			<label><p>¿Qué informacion solicitas?</label><p>
+			<input type="text" name="info" required class="w3-input imagenchula cuadro">
+		</div>
 
-    <label>Terminos i condisiones aseptadas</label><input type="checkbox" name="micheckbox" class="w3-input" value="tienebono" checked>
+		<div class="w3-input w3-left">
+			<label>¿Cuándo te gustaría ir a Hawaii?</label>
+			<input type="datetime" name="mifecha" required id="datepicker">
+		</div>
+<br>
+		<div class="w3-input w3-form w3-left">
+			<input type="checkbox" required name="micheckbox" class="" value="tienebono" checked>
+			<label>Acepto términos i condiciones.</label></div>
 
-
-    <input type="submit" class="w3-input" value="Enviar">
+    <input type="submit" class="w3-input w3-btn	w3-hover-blue w3-teal " value="Enviar">
   </form>
 
-
+	<div class="w3-half ">
+		<img src="fotitos/form.jpg" class="w3-grayscale-min w3-tooltip w3-round w3-border ">
+	</div>
 	</div>
 
 <!-- Pie de página -->
 	<footer id="main_footer" class="w3-panel w3-container w3-footer">
-		<small>Copyleft Ausias March 2016 </small>
+		<small class="w3-text-black">Copyleft Ausias March 2016 </small>
 	</footer>
 
 </div>

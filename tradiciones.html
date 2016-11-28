@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Mi super pagina de html5">
+	<menta name="keywords" content="ausias march, insti, dam, informatica">
+	<title> Hawaii </title>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="shortcut icon" href="fotitos/icono.png">
+	<link rel="stylesheet" href="css/micss.css">
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="w3-pale-green">
+<div class="w3-row">
+<!-- Secciones de documento -->
+<!-- sidenav-->
+<nav class="w3-sidenav w3-cyan w3-text-white w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
+
+	<a href="javascript:void(0)"
+		onclick="w3_closeT()"
+		class="w3-closenav w3-large w3-animate-left">Close &times;</a>
+		<a href="introduccion.html">Introducción</a>
+		<a href="tradiciones.html">Tradiciones y costumbres</a>
+		<a href="paisajes.html">Paisajes en Hawaii</a>
+		<a href="Contacto.html">Contacto</a>
+		<a href="entrada.html">Vuelve al inicio</a>
+
+</nav>
+
+	<div id="divmain">
+		<!-- Cabecera -->
+			<!--header class="w3-container w3-teal w3-color"-->
+			<header class="bghead mysupertitle w3-container">
+				  <span class="w3-opennav w3-xlarge" onclick="w3_openT()" id="openNav">&#9776;</span>
+				<h1> ¿Que hacer en Hawaii? </h1>
+			</header>
+		<!--Fin cabecera-->
+
+		<!-- Barra de navegación -->
+		<ul class="w3-aqua w3-ul">
+			<a href="introduccion.html"><li class="w3-navitem w3-pale-blue w3-quarter w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Introducción</h5></li></a>
+			<a href="tradiciones.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Tradiciones y costumbres</h5></li></a>
+			<a href="paisajes.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Paisajes en Hawaii </h5></li></a>
+			<a href="Contacto.html"><li class="w3-navitem w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Contacto</h5></li></a>
+		</ul>
+
+			</div>
+	</div>
+
+
+<!-- Sección principal -->
+<div class="w3-content w3-center w3-section" style="max-width:500px">
+  <img class="mySlides" src="fotitos/tiki.jpg" style="width:100%">
+  <img class="mySlides" src="fotitos/hibiscus.jpg" style="width:100%">
+  <img class="mySlides" src="fotitos/mozas.jpg" style="width:100%">
+	<img class="mySlides" src="fotitos/ukelele.jpg" style="width:100%">
+</div>
+<div id="tradicion">
+
+
+<h3 class="mysupertitle">IDIOMAS</h3>
+<p>En Hawái, hay dos idiomas oficiales: el inglés y el hawaiano. Sin embargo, la mayoría de la población hawaiana no habla esta última, habiendo alrededor de 2000 hablantes nativos, los cuales representan el 0,1% de la población total.</p>
+<h3 class="mysupertitle">TRADICIONES</h3>
+<p>Una de las tradiciones hawaianas son las guirnaldas de flores o Flower Lei. Significa una muestra de simpatía y generosidad, sería poco amable si te quitaras la guirnalda delante de la persona que te lo entrego. Sus diseños son muy originales y coloridos.
+El hula fue por muchos años una actividad exclusiva para hombres y con propósitos religiosos, pero hoy en día existe como danzas contemporáneas donde, mujeres y hombres, danzan por diversión, para expresarse y como un entretenimiento más. El hula hoy tiene dos formas distintas, la antigua o hula kahiko y la moderna o hula auana
+Otra faceta de la cultura yace en las leyendas. Los antiguos hawaianos eran conocidos por contar historias. Las leyendas eran una manera de documentar la historia, el conocimiento, los hechos y las creencias de generación a generación. Para los hawaianos el arco iris es muy importante ya que para ellos es una bendición de los dioses.</p>
+
+<p>Baby luau: es la celebración más significativa en Hawái en honor al primer cumpleaños de un niño. Algo especialmente importante para esta celebración es matar y rostizar un puerco, incluye música, bailes por grupos profesionales, familiares y amigos cantando karaoke y  tocando ukeleles y guitarras
+
+Después del verano el Aloha Week de septiembre vuelve a traer la fiesta con infinidad de eventos culturales y carreras de canoas al son de la música tradicional.
+En diciembre el surf, deporte señero de Hawai, vive su mayor competencia en el Quicksilver/Eddie Aikau Memorial Big Wave Classic </p>
+
+<h3 class="mysupertitle">DIAS FESTIVOS</h3>
+<p>Hawaii tiene únicamente tres feriados estatales.
+Estos son el día del Príncipe Jonah Kuhio Kalanianaole(26 de marzo),
+La fiesta más importante del estado es el Día del Rey Kamehameha, unificador de las islas, que se festeja en junio con un gran desfile (11 de junio)  y el día de la asunción.
+En estos días festivos, la mayoría de los bancos y las agencias estatales permanecen cerradas </p>
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3500); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<!-- pié de página-->
+	<footer id="main_footer">
+		<small>Copyleft Ausias March 2016 </small>
+	</footer>
+
+</div>
+</body>
+
+</html>

@@ -6,27 +6,25 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Mi super pagina de html5">
 	<menta name="keywords" content="ausias march, insti, dam, informatica">
-	<title> La mega pagina </title>
-	<link rel="stylesheet" href="w3.css">
-	<link rel="stylesheet" href="micss.css">
+	<title> Hawaii </title>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="shortcut icon" href="fotitos/icono.png">
+	<link rel="stylesheet" href="css/micss.css">
+	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
-<body>
-
+<body class="w3-pale-green">
 <div class="w3-row">
 <!-- Secciones de documento -->
-
-
-
 <!-- sidenav-->
-<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left " style="display:none" id="mySidenav">
+<nav class="w3-sidenav w3-aqua w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
 
 	<a href="javascript:void(0)"
 		onclick="w3_close()"
 		class="w3-closenav w3-large w3-animate-left">Close &times;</a>
 		<a href="introduccion.html">Introducción</a>
-		<a href="#">Fotos</a>
-		<a href="#">Link 3</a>
+		<a href="tradiciones">Tradiciones y costumbres</a>
+		<a href="paisajes">Paisajes en Hawaii</a>
 		<a href="Contacto.html">Contacto</a>
 		<a href="entrada.html">Vuelve al inicio</a>
 
@@ -34,43 +32,30 @@
 
 	<div id="divmain">
 		<!-- Cabecera -->
-			<header class="w3-container w3-teal w3-color">
+			<!--header class="w3-container w3-teal w3-color"-->
+			<header class="bghead w3-container">
 				  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-				<h1> Introducción </h1>
+				<h1 class="mysupertitle"> Introducción </h1>
 			</header>
 		<!--Fin cabecera-->
 
 		<!-- Barra de navegación -->
-			<div class="w3-topbar">
+		<ul class="w3-aqua w3-ul ">
+			<a href="introduccion.html"><li class="w3-navitem  w3-pale-blue w3-quarter w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Introducción</h5></li></a>
+			<a href="tradiciones.html"><li class="w3-navitem  w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Tradiciones y costumbres</h5></li></a>
+			<a href="paisajes.html"><li class="w3-navitem  w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Paisajes en Hawaii </h5></li></a>
+			<a href="Contacto.html"><li class="w3-navitem  w3-quarter w3-pale-blue w3-round-large w3-ripple w3-hover-shadow w3-text-indigo w3-border w3-border-indigo w3-hover-teal"><h5>Contacto</h5></li></a>
+		</ul>
 
-				<ul class="w3-ul">
-					<li class="w3-navitem w3-quarter"> <h5>Introducción</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Fotos</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Mejores playas</h5></li>
-					<li class="w3-navitem w3-quarter"><h5>Contacto</h5></li>
-				</ul>
 			</div>
 	</div>
 
-	<script>
-		function w3_open() {
-  		document.getElementById("divmain").style.marginLeft = "25%";
-  		document.getElementById("mySidenav").style.width = "25%";
-  		document.getElementById("mySidenav").style.display = "block";
-  		document.getElementById("openNav").style.display = 'none';
-			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-		}
-
-		function w3_close() {
-			document.getElementById("divmain").style.marginLeft = "0%";
-  		document.getElementById("mySidenav").style.display = "none";
-  		document.getElementById("openNav").style.display = "inline-block";
-			document.body.style.backgroundColor = "white";
-		}
-</script>
 
 <!-- Sección principal -->
 	<section id="main_section">
+
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=6&center=19.8968%2C-155.5828&key=AIzaSyAKBxNOnddcXU0pc-exrWXXX_I85kGoD_c" allowfullscreen></iframe>
+
 
 		<article>
 
@@ -79,8 +64,7 @@
 			</header>
 <p contenteditable="false">
 	<span contenteditable="true" id="texto1">Què és Lorem Ipsum?</span><br>
-Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard<wbr> de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va<wbr> mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet<wbr> el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.
- </p>
+</p>
  				<figure>
 					<img src="elefante.jpg">
 					<figcaption id="texto1">

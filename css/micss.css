@@ -1,0 +1,91 @@
+body,h1 {font-family: "Raleway", sans-serif;
+          color: white}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('../fotitos/wallpaper2.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.boton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.bghead {
+
+  background-image: url('../fotitos/top.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+
+}
+
+.bgform {
+
+  background-image: url('../fotitos/form.jpg');
+  min-height: 100%;
+  background-position: left;
+  background-size: cover;
+  height: 170px;
+}
+
+.mySidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition-duration: 0.7s;
+    padding-top: 60px;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.imagenchula{
+  height: 120px;
+  width: 600px;
+}
+
+.cuadro{
+  padding: 4px 4px 4px 4px;
+}
+
+#main_footer {
+clear: both;
+border-top: 2px solid #999999;
+text-align: center;
+padding: 20px;
+margin-bottom: 10px;
+
+}
+
+/*Fuentes*/
+
+@font-face {
+    font-family: aloha;
+    src: url('../fonts/aloha.otf');
+}
+
+
+.mysupertitle{
+  font-family: "aloha";
+
+}
+
+.w3-img-cool {
+width: 100%;
+height: auto;
+
+
+}
